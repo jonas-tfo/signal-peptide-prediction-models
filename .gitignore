@@ -1,0 +1,6 @@
+.DS_Store
+model_graph
+model_visualization_torchviz
+.env
+__pycache__/
+continue_training.ipynb
