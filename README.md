@@ -1,4 +1,7 @@
-**binary** currently unsuccessful  
+# Signal Peptide Prediction using machine learning
+
+### Task 
+- 6-state prediction of amino acid labels, namely (I: intracellular, M: membrane, O: extracellular, S: Sec/SPI, L: Sec/SPII, T: Tat/SPI and Tat/SPII)
   
 **v1**: prot_bert transformer + two sequential dense layers (256 neurons each) -> poor to moderate performance  
 **v2**: prot_bert transformer + two CNN layers (1024 neurons each) -> only experimental  
