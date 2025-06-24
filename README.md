@@ -1,23 +1,63 @@
-# Signal Peptide Prediction using machine learning
+# Signal Peptide Prediction using Machine Learning
 
-## Task 
-- 6-state prediction of amino acid labels, namely (I: intracellular, M: membrane, O: extracellular, S: Sec/SPI, L: Sec/SPII, T: Tat/SPI and Tat/SPII)
+## Overview
+
+This project focuses on the classification of amino acid sequences into signal peptide (SP) and non-signal peptide (Non-SP) categories using various machine learning models.
 
 ---
 
-## Versions
-### 6-state classifiers
-##### v1: 
-  prot_bert transformer + two sequential dense layers (256 neurons each) -> poor to moderate performance  
-##### v2: 
-  prot_bert transformer + two CNN layers (1024 neurons each) -> only experimental  
-##### v3:
-  prot_bert transformer + one CNN layer (1024 neurons) + bidirectional LSTM (1024 neurons) + dense layer (512*2 neurons) + CRF -> good performance  
-##### v4: 
-  prot_bert transformer + two CNN layers (1024 neurons each) + bidirectional LSTM (1024 neurons) + dense layer (512*2 neurons) + CRF -> training interruptions, poor      performance  
-##### v5 + v5_2: 
-  prot_bert transformer + CNN layer (1024 neurons) + Normalization + bidirectional LSTM (1024 neurons) + dense layer (512*2 neurons) + CRF -> best performance  
+## Classification Tasks
 
-### 2-state binary classifiers
-##### v1:
-  classification of sequences to signal peptide or non signal peptide using logistic regression with sequences containing one hot encoded amino acids
+- **2-state:**  
+  - `0`: Non signal peptide  
+  - `1`: Signal peptide
+
+- **4-state:**  
+  - Non signal peptide  
+  - `S`: Sec/SPI  
+  - `L`: Sec/SPII  
+  - `T`: Tat/SPI and Tat/SPII
+
+- **6-state:**  
+  - `I`: Intracellular  
+  - `M`: Membrane  
+  - `O`: Extracellular  
+  - `S`: Sec/SPI  
+  - `L`: Sec/SPII  
+  - `T`: Tat/SPI and Tat/SPII
+
+---
+
+## Model Versions
+
+### 6-State Classifiers
+
+- **v1:**  
+  ProtBERT transformer + two sequential dense layers (256 neurons each)  
+  _Performance:_ Poor to moderate
+
+- **v2:**  
+  ProtBERT transformer + two CNN layers (1024 neurons each)  
+  _Performance:_ Experimental only
+
+- **v3:**  
+  ProtBERT transformer + one CNN layer (1024 neurons) + bidirectional LSTM (1024 neurons) + dense layer (2×512 neurons) + CRF  
+  _Performance:_ Moderate to good performance
+
+- **v4:**  
+  ProtBERT transformer + two CNN layers (1024 neurons each) + bidirectional LSTM (1024 neurons) + dense layer (2×512 neurons) + CRF  
+  _Performance:_ Training interruptions, poor
+
+- **v5 / v5_2:**  
+  ProtBERT transformer + CNN layer (1024 neurons) + normalization + bidirectional LSTM (1024 neurons) + dense layer (2×512 neurons) + CRF  
+  _Performance:_ Best
+
+---
+
+### 2-State Binary Classifiers
+
+- **v1:**  
+  Logistic regression on one-hot encoded amino acid sequences  
+  _Performance:_ Very good
+
+
