@@ -79,7 +79,7 @@ This project focuses on the classification of amino acid sequences into signal p
 - **v4 (XGBoost/LightGBM):**  
   _Architecture:_ XGBoost and LightGBM with hyperparameter search on one-hot encoded sequences  
   _Description:_ Uses random search for hyperparameter tuning.  
-  _Performance:_ Very good
+  _Performance:_ Good
 
 - **v5 (Transformer Embedding + XGBoost):**  
   _Architecture:_ XGBoost on ProtBERT transformer embeddings  
