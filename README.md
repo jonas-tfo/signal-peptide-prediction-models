@@ -61,7 +61,7 @@ This project focuses on the classification of amino acid sequences into signal p
 
 ### 2-State Binary Classifiers
 
-- **v1:**  
+- **v1 (Logistic Regression):**  
   _Architecture:_ Logistic regression on one-hot encoded amino acid sequences  
   _Description:_ Simple baseline for binary SP/Non-SP classification.  
   _Performance:_ Moderate
@@ -78,7 +78,7 @@ This project focuses on the classification of amino acid sequences into signal p
 
 - **v4 (XGBoost/LightGBM):**  
   _Architecture:_ XGBoost and LightGBM with hyperparameter search on one-hot encoded sequences  
-  _Description:_ Uses random search for hyperparameter tuning.  
+  _Description:_ Uses random search for hyperparameter tuning on XGBoost model.  
   _Performance:_ Good
 
 - **v5 (Transformer Embedding + XGBoost):**  
