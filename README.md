@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project focuses on the classification of amino acid sequences into signal peptide (SP) and non-signal peptide (Non-SP) categories using various machine learning models.
+This project focuses on the classification of amino acid sequences and/or the contained individual amino acids into various different categories related to signal peptide types and residue locations using various machine learning models.
 
 ---
 
