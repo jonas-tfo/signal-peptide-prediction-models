@@ -59,29 +59,43 @@ This project focuses on the classification of amino acid sequences and/or the co
 
 ---
 
+### 4-State Classifiers
+
+- **v1**
+  _Architecture:_ XGBoost (Gradient Boost) on ProtBERT transformer embeddings.  
+  _Description:_ Uses transformer-based sequence embeddings as features for XGBoost.  
+  _Performance:_ Very good, Accuracy: 98%
+
+---
+
 ### 2-State Binary Classifiers
 
 - **v1 (Logistic Regression):**  
-  _Architecture:_ Logistic regression on one-hot encoded amino acid sequences  
+  _Architecture:_ Logistic regression on one-hot encoded amino acid sequences.  
   _Description:_ Simple baseline for binary SP/Non-SP classification.  
-  _Performance:_ Moderate
+  _Performance:_ Moderate, Accuracy: 96.8%
+
+- **v2 (SVM)**
+  _Architecture:_ SVM using one-hot encoded amino acid sequences  
+  _Description:_ Support Vector Machine for binary SP/Non-SP classification.  
+  _Performance:_ Moderate, Accuracy: 95.3%
 
 - **v3 (Gradient Boosting):**  
-  _Architecture:_ GradientBoostingClassifier on one-hot encoded amino acid sequences  
+  _Architecture:_ GradientBoostingClassifier on one-hot encoded amino acid sequences.  
   _Description:_ Basic gradient boosting for binary SP/Non-SP classification.  
-  _Performance:_ Moderate to good
+  _Performance:_ Good, Accuracy: 97.7% 
 
 - **v4 (XGBoost):**  
-  _Architecture:_ XGBoost on one-hot encoded amino acid sequences  
+  _Architecture:_ XGBoost on one-hot encoded amino acid sequences.  
   _Description:_ XGBoost model for binary SP/Non-SP classification.  
-  _Performance:_ Good
+  _Performance:_ Good, Accuracy: 97.7%
 
 - **v5 (XGBoost/LightGBM):**  
-  _Architecture:_ XGBoost and LightGBM with hyperparameter search on one-hot encoded sequences  
+  _Architecture:_ XGBoost and LightGBM with hyperparameter search on one-hot encoded sequences.  
   _Description:_ Uses random search for hyperparameter tuning on XGBoost model.  
-  _Performance:_ Good
+  _Performance:_ Good, Accuracy: 97.4%
 
 - **v6 (Transformer Embedding + XGBoost):**  
-  _Architecture:_ XGBoost on ProtBERT transformer embeddings  
+  _Architecture:_ XGBoost on ProtBERT transformer embeddings.  
   _Description:_ Uses transformer-based sequence embeddings as features for XGBoost.  
-  _Performance:_ Best among boosting
+  _Performance:_ Very good, Accuracy: 99.4%
