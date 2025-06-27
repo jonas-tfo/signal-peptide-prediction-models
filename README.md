@@ -66,22 +66,22 @@ This project focuses on the classification of amino acid sequences and/or the co
   _Description:_ Simple baseline for binary SP/Non-SP classification.  
   _Performance:_ Moderate
 
-- **v2 (Gradient Boosting):**  
+- **v3 (Gradient Boosting):**  
   _Architecture:_ GradientBoostingClassifier on one-hot encoded amino acid sequences  
   _Description:_ Basic gradient boosting for binary SP/Non-SP classification.  
   _Performance:_ Moderate to good
 
-- **v3 (XGBoost):**  
+- **v4 (XGBoost):**  
   _Architecture:_ XGBoost on one-hot encoded amino acid sequences  
   _Description:_ XGBoost model for binary SP/Non-SP classification.  
   _Performance:_ Good
 
-- **v4 (XGBoost/LightGBM):**  
+- **v5 (XGBoost/LightGBM):**  
   _Architecture:_ XGBoost and LightGBM with hyperparameter search on one-hot encoded sequences  
   _Description:_ Uses random search for hyperparameter tuning on XGBoost model.  
   _Performance:_ Good
 
-- **v5 (Transformer Embedding + XGBoost):**  
+- **v6 (Transformer Embedding + XGBoost):**  
   _Architecture:_ XGBoost on ProtBERT transformer embeddings  
   _Description:_ Uses transformer-based sequence embeddings as features for XGBoost.  
   _Performance:_ Best among boosting
