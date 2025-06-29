@@ -103,4 +103,4 @@ This project focuses on the classification of amino acid sequences and/or the co
 - **v6 (Transformer Embedding + XGBoost):**  
   _Architecture:_ XGBoost on ProtBERT transformer embeddings.  
   _Description:_ Uses transformer-based sequence embeddings as features for XGBoost.  
-  _Performance:_ Very good, Accuracy: 99.4%
+  _Performance:_ Best, Accuracy: 99.4%
