@@ -66,6 +66,11 @@ This project focuses on the classification of amino acid sequences and/or the co
   _Description:_ Uses transformer-based sequence embeddings as features for XGBoost.  
   _Performance:_ Very good, Accuracy: 98%
 
+- **v2:**
+  _Architecture:_ XGBoost (Gradient Boost) on ProtBERT transformer embeddings.  
+  _Description:_ Uses transformer-based sequence embeddings as features for XGBoost and random search for hyperparam optimisation.  
+  _Performance:_ Best, Accuracy: 99.3%
+
 ---
 
 ### 2-State Binary Classifiers
