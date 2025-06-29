@@ -1,0 +1,18 @@
+[project]
+name = "signal-peptide-prediction-models"
+version = "0.1.0"
+description = "Signal peptide prediction with machine learning methods"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10.3",
+    "numpy>=2.3.1",
+    "pandas>=2.3.0",
+    "pytorch-crf>=0.7.2",
+    "scikit-learn>=1.7.0",
+    "scipy>=1.16.0",
+    "torch>=2.7.1",
+    "tqdm>=4.67.1",
+    "transformers>=4.53.0",
+    "xgboost>=3.0.2",
+]
